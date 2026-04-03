@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Ventures — High-Revenue Marketing Ops</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="logo">DV</span>
+    <a href="#contact" class="nav-cta">Neem contact op</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Dutch Marketing Consultancy</p>
+      <h1>We bouwen<br /><em>marketing machines</em><br />die omzet genereren.</h1>
+      <p class="subtitle">Digital Ventures helpt ambitieuze bedrijven hun marketing operations te professionaliseren — van funnel-architectuur tot paid media en revenue maximalisatie.</p>
+      <a href="#contact" class="btn-primary">Start een gesprek &nbsp;↗</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <p class="section-label">Wat we doen</p>
+    <h2>Onze diensten</h2>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <div class="card-body">
+          <h3>Performance Marketing</h3>
+          <p>Data-gedreven campagnes op Meta, Google en TikTok. Gericht op ROAS, CAC en schaalbare groei.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <div class="card-body">
+          <h3>Marketing Operations</h3>
+          <p>Processen, tooling en automatisering zodat je marketing-team op volle kracht kan draaien.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <div class="card-body">
+          <h3>Revenue Optimalisatie</h3>
+          <p>Funnel-audits, CRO en retention-strategieën die de lifetime value van elke klant maximaliseren.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <div class="card-body">
+          <h3>Brand x Performance</h3>
+          <p>De perfecte balans tussen merkopbouw en directe conversie — voor bedrijven die willen domineren.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section">
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">€50M+</span>
+        <span class="stat-label">Beheerd advertentiebudget</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">80+</span>
+        <span class="stat-label">Klanten geholpen</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3.8×</span>
+        <span class="stat-label">Gemiddelde ROAS verbetering</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">8jr</span>
+        <span class="stat-label">Ervaring in de industrie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="aanpak">
+    <p class="section-label">Onze aanpak</p>
+    <h2>Van audit tot resultaat</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <div>
+          <h4>Discovery &amp; Audit</h4>
+          <p>We duiken in je huidige setup — data, kanalen, funnels en team — en identificeren de grootste groeikansen.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <div>
+          <h4>Strategie &amp; Roadmap</h4>
+          <p>Een concreet plan met prioriteiten, KPI's en tijdlijn. Geen vaag advies, maar een executie-ready roadmap.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <div>
+          <h4>Implementatie</h4>
+          <p>We werken hands-on samen met je team of nemen de uitvoering volledig over. Snel, precies, resultaatgericht.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <div>
+          <h4>Schalen &amp; Optimaliseren</h4>
+          <p>Data in, learnings verwerken, budget opschalen. We stoppen pas als de machine op volle toeren draait.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <p class="section-label">Contact</p>
+    <h2>Klaar om te groeien?</h2>
+    <p class="contact-sub">Laat je naam en e-mail achter en we nemen binnen 24 uur contact op.</p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Naam</label>
+          <input type="text" id="name" placeholder="Jan de Vries" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="jan@bedrijf.nl" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company">Bedrijf &amp; omzet (optioneel)</label>
+        <input type="text" id="company" placeholder="Bijv. Webshop met €2M omzet" />
+      </div>
+      <button type="submit" class="btn-primary full-width">Verstuur &nbsp;→</button>
+      <p class="form-success" id="form-success">Bedankt! We nemen snel contact op.</p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="logo">DV</span>
+    <p>© 2026 Digital Ventures — Amsterdam, Nederland</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
