@@ -134,7 +134,7 @@
   <section class="section contact-section" id="contact">
     <p class="section-label">Contact</p>
     <h2>Klaar om te groeien?</h2>
-    <p class="contact-sub">Laat je naam en e-mail achter en we nemen binnen 24 uur contact op.</p>
+    <p class="contact-sub">Laat je gegevens achter en we nemen binnen 24 uur contact op.</p>
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
         <div class="form-group">
@@ -146,9 +146,23 @@
           <input type="email" id="email" placeholder="jan@bedrijf.nl" required />
         </div>
       </div>
-      <div class="form-group">
-        <label for="company">Bedrijf &amp; omzet (optioneel)</label>
-        <input type="text" id="company" placeholder="Bijv. Webshop met €2M omzet" />
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Telefoonnummer (optioneel)</label>
+          <input type="tel" id="phone" placeholder="+31 6 12345678" />
+        </div>
+        <div class="form-group">
+          <label for="company">Bedrijf &amp; omzet (optioneel)</label>
+          <input type="text" id="company" placeholder="Bijv. Webshop met €2M omzet" />
+        </div>
+      </div>
+      <div class="form-group form-group--checkbox">
+        <label class="checkbox-label">
+          <input type="checkbox" id="sms-consent" name="sms-consent" />
+          <span>
+            Ik geef toestemming om tekstberichten (SMS) te ontvangen van Digital Ventures over consultancy-updates en aanbiedingen. Berichtfrequentie kan variëren. Standaard bericht- en datatarieven kunnen van toepassing zijn. Antwoord <strong>STOP</strong> om je uit te schrijven op elk moment. Zie ons <a href="/privacy-policy.html">Privacybeleid</a> en onze <a href="/terms.html">Algemene Voorwaarden</a>.
+          </span>
+        </label>
       </div>
       <button type="submit" class="btn-primary full-width">Verstuur &nbsp;→</button>
       <p class="form-success" id="form-success">Bedankt! We nemen snel contact op.</p>
